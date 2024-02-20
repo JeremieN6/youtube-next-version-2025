@@ -1,0 +1,38 @@
+/* CATEGORIES */
+.containerCategories {
+    margin-top: 2em;
+}
+.contentCategory{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    overflow-x: scroll;
+    border-radius: 10px;
+    padding: 1em;
+    background-color: var( --bg-color-card);
+}
+.category {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--btn-color-categ);
+    margin: 0 25px 0 0;
+    padding: 10px;
+    border-radius: 10px;
+}
+.category p {
+    white-space: nowrap;
+    margin: 0; /* Pour enlever les marges par défaut des paragraphes */
+    font-size: 12px;
+}
+.category.active{
+    background-color: var(--default-red-color);
+    font-family: 'inter';
+    font-size: 12px;
+    letter-spacing: -.1px;
+}
+.contentCategory a{
+    text-decoration: none;
+    color: inherit;
+}
+/* CATEGORIES */

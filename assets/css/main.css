@@ -1,0 +1,124 @@
+:root{
+    --default-red-color: #FF0000;
+    --bg-color-page: #111827;
+    --bg-color-card: #1F2937;
+    --bg-hover-card: #4B5563;
+    --btn-color-categ: #38414e;
+    --color-body: #FFFFFF;
+    --color-subtitle: #6B7280;
+}
+@font-face {
+    font-family: 'Roboto Medium';
+    src: url(/assets/fonts/Roboto/Roboto-Medium.ttf);
+}
+@import url('https://fonts.cdnfonts.com/css/inter');
+
+
+/* SCROLLBAR */
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--bg-color-card); 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--bg-hover-card); 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--bg-hover-card); 
+}
+/* SCROLLBAR */
+
+/* PAGE */
+body{
+    background-color: var(--bg-color-page);
+    color: var(--color-body);
+    font-family: 'Inter', sans-serif;
+}
+.containerPage{
+    padding: 0 2em;
+}
+
+.containerPageMobile{
+  display: none;
+}
+.containerPage{
+  display: block;
+}
+
+/* PAGE */
+
+
+.otherContent li {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  /* margin-bottom: 20px; */
+  padding: 10px 0 10px 5px;
+}
+
+
+/* MEDIA QUERIES*/
+@media (max-width: 899px){
+  .containerPageMobile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 2em;
+
+    font-family: 'Inter';
+    font-size: 12px;
+  }
+  .containerPage{
+    display: none;
+  }
+}
+@media(min-width: 900px) and (max-width:1100px){
+  .video-style{
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    background-repeat: repeat-y;
+  }
+}
+@media(min-width: 1500px){
+  .containerDescription{
+    width: 100%;
+  }
+  .video, .video-1,
+  .video-2, .video-3,
+  .video-4{
+    background-size: cover;
+    width: auto;
+    height: 100%;
+  }
+  .container{
+    grid-template-columns: 15% 1fr 1fr 20%;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+}
+@media(min-width: 2100px){
+  .video-style{
+    background-size: cover;
+  }
+
+  .container{
+    gap: 30px 30px;
+  }
+}
+/* MEDIA QUERIES*/

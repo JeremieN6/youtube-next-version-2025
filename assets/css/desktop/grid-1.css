@@ -1,0 +1,367 @@
+/* GRID 1 */
+.container {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0fr 0fr 0fr;
+    gap: 18px 18px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "gridNav video video-1 video-2"
+      "gridNav video-3 video-4 followers"
+      "double shorts shorts followers";
+  }
+  
+  .double {  display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px 10px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "shortLogo long"
+      "next long"
+      "previous long";
+    grid-area: double;
+  }
+  
+  .long {  display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ".";
+    grid-area: long;
+    border-radius: 15px;
+    background-image: url(../../images/shorts/short-2.webp);
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    align-items: flex-end;
+    height: 390px;
+  }
+  
+  .shortLogo {  display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ".";
+    grid-area: shortLogo;
+    border-radius: 15px;
+    background-color: var(--default-red-color);
+  }
+  .containerLogoShort {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .contentLogoShort{
+    width: 100%;
+  }
+  
+  .next {  display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ".";
+    grid-area: next;
+    background-color: var(--bg-color-card);
+    border-radius: 15px;
+
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 28px;
+
+    cursor: pointer;
+  }
+  
+  .previous {  display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ".";
+    grid-area: previous;
+    background-color: var(--bg-color-card);
+    border-radius: 15px;
+
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 28px;
+
+    cursor: pointer;
+  }
+  
+  .gridNav {  display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ".";
+    grid-area: gridNav;
+    background-color: var(--bg-color-card);
+    border-radius: 10px;
+  }
+  ul{
+    padding: 1em 2em;
+    list-style: none;
+  }
+  li.active{
+    background-color: var(--bg-color-page);
+    width: 95%;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  li:hover{
+    background-color: var(--bg-color-page);
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: transform 0.3s ease-out;
+  }
+  /* ABONNEMENT */
+  .followers {  
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ".";
+    grid-area: followers;
+    background-color: var(--bg-color-card);
+    border-radius: 15px;
+    /* background-color: greenyellow;
+    border: solid 1px lightgrey; */
+  }
+  .followers li:hover{
+    background-color: var(--bg-color-page);
+    border-radius: 10px;
+    padding: 5px;
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: transform 0.3s ease-out;
+  }
+  .subtitle{
+    padding: 1em 1em 0;
+    color: var(--color-subtitle);
+    margin-bottom: 5px;
+  }
+  .containerAvatarFollower,
+  .containerIconeFollower {
+    display: flex;
+    align-items: center;
+  }
+  .containerFollower,
+  .containerIconeFollower p{
+    padding-left: 15px;
+  }
+  .contentIconeFollower{
+    filter: invert(1);
+  }
+  .containerFollower li{
+    font-size: 12px;
+    padding: 5px 0 5px 5px;
+  }
+  /* p.follower {
+    font-size: 14px;
+  } */
+  .list{
+    padding: 1em 1em 0;
+    margin-top: 0;
+  }
+  /* ABONNEMENT */
+  .shorts {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr; 
+    gap: 15px 15px; 
+    grid-template-areas: 
+      "short-1 short-2 short-3"; 
+    grid-area: shorts; 
+  }
+  .short-1 {
+    display: grid; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "."; 
+    grid-area: short-1; 
+    border-radius: 15px;
+    background-image: url(../../images/shorts/short-3.webp);
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    align-items: flex-end;
+  }
+  .short-2 {
+    display: grid; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "."; 
+    grid-area: short-2; 
+    border-radius: 15px;
+    background-image: url(../../images/shorts/short-4.webp);
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    align-items: flex-end;
+  }
+  .short-3 {
+    display: grid; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "."; 
+    grid-area: short-3; 
+    border-radius: 15px;
+    background-image: url(../../images/shorts/short-5.webp);
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    align-items: flex-end;
+  }
+  .video { 
+    grid-area: video;     
+    background-image: url(../../images/minia/video-1.webp);
+    /* background-color: blueviolet;
+    border: solid 1px lightgrey; */
+}
+  
+  .video-1 { 
+    grid-area: video-1; 
+    background-image: url(../../images/minia/video-2.webp);
+    /* background-color: fuchsia;
+    border: solid 1px lightgrey; */
+}
+  
+  .video-2 { 
+    grid-area: video-2; 
+    background-image: url(../../images/minia/video-3.webp);
+    /* background-color: antiquewhite;
+    border: solid 1px lightgrey; */
+}
+  
+  .video-3 { 
+    grid-area: video-3; 
+    background-image: url(../../images/minia/video-4.webp);
+    /* background-color: rebeccapurple;
+    border: solid 1px lightgrey; */
+}
+  
+  .video-4 { 
+    grid-area: video-4; 
+    background-image: url(../../images/minia/video-5-1.jpg);
+    /* background-color: teal;
+    border: solid 1px lightgrey; */
+}
+/* VIDEO */
+.video-style{
+  border-radius: 15px;
+  background-size: contain;
+  display: flex;
+  align-items: flex-end;
+
+  /* width: 285px; */
+  width: 100%;
+  height: 255px;
+  background-repeat: repeat;
+
+  cursor: pointer;
+}
+.contentVideo{
+  width: 100%;
+}
+
+.containerDescription{
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  background-color: rgb(0 0 0 / 45%);
+  backdrop-filter: blur(10px);
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  height: 100px;
+  width: auto;
+}
+.containerAvatar {
+  padding: 0 10px;
+}
+.contentTitle p{
+  margin-bottom: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+.contentAvatar{
+  border-radius: 50%;
+  width: 35px;
+}
+.contentMoreInfo p{
+  color: #7a7a79;
+  margin: 5px 0 5px;
+  font-size: 11px;
+}
+/* VIDEO */
+  
+/* CUSTOM GRID 1 */
+.contentGridNav li{
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  /* margin-bottom: 20px; */
+  padding: 10px 0 10px 5px;
+}
+.contentIconeNav{
+  filter: invert(1);
+  width: 85%;
+}
+.img-nav-custom{
+  filter: invert(0);
+  width: 100%;
+}
+.containerIconeNav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+.separator{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 0 15px;
+  color: var(--color-subtitle);
+}
+.separator span {
+  font-size: 14px;
+}
+.border-bottom{
+  border-bottom: 1px solid var(--bg-hover-card);
+  width: 80%;
+}
+/* CUSTOM GRID 1 */
+
+/* GRID 1 */

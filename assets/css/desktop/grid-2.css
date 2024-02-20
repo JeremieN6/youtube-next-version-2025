@@ -1,0 +1,126 @@
+/* GRID 2 */
+.containerBloc2{
+    margin-top: 2em;
+  }
+.contentBloc2 {  
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 15px 15px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "video-2-1 video-2-2 video-2-3 Explore"
+      "ohterContent video-2-4 video-2-5 Explore";
+  }
+  
+  .Explore { 
+    display: grid; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: 0fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "."; 
+    grid-area: Explore; 
+    padding: 1em;
+    border-radius: 10px;
+    background-color: var(--bg-color-card);
+    /* background-color: yellowgreen;
+    border: solid 1px lightgrey; */
+  }
+  .Explore li {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    /* margin-bottom: 20px; */
+    padding: 10px 0 10px 5px;
+}
+  .video-2-1 {  
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ".";
+    grid-area: video-2-1;
+    background-image: url(../../images/minia/video-6-1.jpg);
+
+    /* background-color: indianred;
+    border: solid 1px lightgrey; */
+  }
+  
+  .video-2-2 {  
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ".";
+    grid-area: video-2-2;
+    background-image: url(../../images/minia/video-7.webp);
+    /* background-color: palevioletred;
+    border: solid 1px lightgrey; */
+  }
+  
+  .video-2-3 {  
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ".";
+    grid-area: video-2-3;
+    background-image: url(../../images/minia/video-8.webp);
+
+    /* background-color: seagreen;
+    border: solid 1px lightgrey; */
+  }
+  
+  .video-2-4 {  
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ".";
+    grid-area: video-2-4;
+    background-image: url(../../images/minia/video-9.jpg);
+
+    /* background-color: darkkhaki;
+    border: solid 1px lightgrey; */
+  }
+  
+  .video-2-5 {  
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ".";
+    grid-area: video-2-5;
+    background-image: url(../../images/minia/video-10.jpg);
+
+    /* background-color: firebrick;
+    border: solid 1px lightgrey; */
+  }
+  
+  .otherContent {  
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ".";
+    grid-area: ohterContent;
+    padding: 1em;
+    border-radius: 10px;
+    background-color: var(--bg-color-card);
+    /* background-color: gainsboro;
+    border: solid 1px lightgrey; */
+  }
+  /* GRID 2 */

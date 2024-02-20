@@ -1,0 +1,107 @@
+/* HEADER */
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 0;
+}
+.containerLogo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contentLogo{
+  width: 75%;
+}
+.contentPlus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: solid 2px white;
+    color: #FFF;
+    font-weight: bolder;
+}
+.containerNotificationNumber{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15px;
+  height: 10px;
+  padding: 5px;
+  background-color: var(--default-red-color);
+  border-radius: 40%;
+  top: 20px;
+  /* visibility: hidden; */
+}
+.containerNotificationNumber p{
+  font-size: 11px;
+}
+/* .containerNotificationNumber:hover{
+  visibility: visible;
+} */
+.containerLogoMain {
+    display: flex;
+    align-items: center;
+    padding: 0 2em;
+    background-color: var(--default-red-color);
+    height: 40px;
+    border-radius: 10px;
+}
+
+.containerSearch {
+    flex-grow: 1; /* Permet à cet élément de s'agrandir et de remplir l'espace restant */
+    margin: 0 1em; /* Ajoute une marge entre le logo et l'input */
+}
+
+.contentSearch {
+    position: relative;
+}
+
+.search-container {
+    position: relative;
+}
+  
+input#search {
+    background-color: var(--bg-color-card);
+    border: 0;
+    width: 100%; /* Utilise la largeur disponible */
+    height: 40px;
+    border-radius: 10px;
+    padding-left: 40px; /* Ajustez la valeur selon la taille de votre icône */
+}
+
+.fa-search,.fa-microphone{
+    position: absolute;
+    color: #888;
+}
+.fa-search {
+    left: 15px; /* Ajustez la position de l'icône de recherche */
+    top: 30%;
+    transform: translateY(-50%);
+}
+.fa-microphone{
+    right: 15px; /* Ajustez la position de l'icône de microphone */
+    top: 30%;
+    transform: translateY(-50%);
+}
+.containerAccount {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--bg-color-card);
+    border-radius: 10px;
+    padding: 0 0 0 15px;
+    width: 12%;
+}
+.contentImgAccount{
+    width: 40px;
+    height: 40px;
+}
+.containerImageAccount{
+    display: flex;
+}
+/* HEADER */

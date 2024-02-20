@@ -1,0 +1,78 @@
+/* GRID 3 */
+.containerBloc3{
+  margin-top: 2em;
+}
+.contentBloc3 {  
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 15px 15px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "video-3-1 video-3-2 video-3-3 video-3-4"
+    "video-3-5 video-3-6 video-3-7 video-3-8"
+    "video-3-9 video-3-10 video-3-11 video-3-12"
+    "video-3-13 video-3-14 video-3-15 video-3-16";
+  }
+  .video-3-1, .video-3-2, .video-3-3, .video-3-4,
+  .video-3-5, .video-3-6, .video-3-7, .video-3-8,
+  .video-3-9, .video-3-10, .video-3-11, .video-3-12,
+  .video-3-13, .video-3-14, .video-3-15, .video-3-16 {  
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ".";
+  }
+
+  .video-3-1{
+    background-image: url(../../images/minia/video-11.jpg);
+  }
+  .video-3-2{
+    background-image: url(../../images/minia/video-12.jpg);
+  }
+  .video-3-3{
+    background-image: url(../../images/minia/video-13.jpg);
+  }
+  .video-3-4{
+    background-image: url(../../images/minia/video-14.jpg);
+  }
+  .video-3-5{
+    background-image: url(../../images/minia/video-1.webp);
+  }
+  .video-3-6{
+    background-image: url(../../images/minia/video-2.webp);
+  }
+  .video-3-7{
+    background-image: url(../../images/minia/video-3.webp);
+  }
+  .video-3-8{
+    background-image: url(../../images/minia/video-4.webp);
+  }
+  .video-3-9{
+    background-image: url(../../images/minia/video-5-1.jpg);
+  }
+  .video-3-10{
+    background-image: url(../../images/minia/video-6-1.jpg);
+  }
+  .video-3-11{
+    background-image: url(../../images/minia/video-7.webp);
+  }
+  .video-3-12{
+    background-image: url(../../images/minia/video-8.webp);
+  }
+  .video-3-13{
+    background-image: url(../../images/minia/video-9.jpg);
+  }
+  .video-3-14{
+    background-image: url(../../images/minia/video-11.jpg);
+  }
+  .video-3-15{
+    background-image: url(../../images/minia/video-12.jpg);
+  }
+  .video-3-16{
+    background-image: url(../../images/minia/video-13.jpg);
+  }
+  /* GRID 3 */
