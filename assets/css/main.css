@@ -46,12 +46,14 @@ body{
 .containerPage{
     padding: 0 2em;
 }
-
+.containerPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 .containerPageMobile{
   display: none;
-}
-.containerPage{
-  display: block;
 }
 
 /* PAGE */
@@ -67,6 +69,11 @@ body{
 
 
 /* MEDIA QUERIES*/
+@media (max-width: 1499px){
+  .containerPage{
+    display: block;
+  }
+}
 @media (max-width: 899px){
   .containerPageMobile{
     display: flex;
@@ -110,6 +117,9 @@ body{
   .container{
     grid-template-columns: 15% 1fr 1fr 20%;
     grid-template-rows: 1fr 1fr 1fr;
+  }
+  .contentPage {
+    width: 75%;
   }
 }
 @media(min-width: 2100px){
